@@ -45,7 +45,14 @@ ollama pull llama3.2
 # 3. Run the evals and open the results viewer
 promptfoo eval -c evals/promptfooconfig.yaml
 promptfoo view
+
+# 4. Negative control: every eval should FAIL against the deliberately bad bot
+promptfoo eval -c evals/promptfooconfig.yaml -r file://evals/providers/bad_bot.js
 ```
+
+## Findings
+
+- [001: 3 of 5 evals passed wrong answers](docs/findings/001-weak-assertions.md)
 
 ## Repo layout
 
