@@ -25,13 +25,17 @@ Wrong answers here are not just bugs. Overstated claims about what a water filte
 
 ## Tech
 
-- Python 3.11+
+- Python 3.11+ and pytest
 - [Promptfoo](https://www.promptfoo.dev/) for LLM evals
 - [Ollama](https://ollama.com) for running a local model at no cost
 
 ## Run it locally
 
 ```bash
+# 0. Check the source data with pytest (no model needed)
+python3 -m pip install -r requirements.txt
+python3 -m pytest -v
+
 # 1. Install Promptfoo (needs Node.js 20+)
 npm install -g promptfoo
 
@@ -46,6 +50,7 @@ promptfoo view
 ## Repo layout
 
 ```
+tests/        pytest checks on the source data
 evals/        Promptfoo config and test cases
 data/         Product information the chatbot answers from
 docs/         Test strategy and findings reports
