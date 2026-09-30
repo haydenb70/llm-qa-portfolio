@@ -59,3 +59,4 @@ docs/         Test strategy and findings reports
 ## About
 
 Built by Hayden Dennis as part of a move from traditional QA into AI and LLM testing.
+LinkedIn Profile: linkedin.com/in/haydenbdennis/
