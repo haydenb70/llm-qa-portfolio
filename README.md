@@ -53,6 +53,7 @@ promptfoo eval -c evals/promptfooconfig.yaml -r file://evals/providers/bad_bot.j
 ## Findings
 
 - [001: 3 of 5 evals passed wrong answers](docs/findings/001-weak-assertions.md)
+- [002: Health-claim eval failed a correct refusal](docs/findings/002-negation-false-failure.md)
 
 ## Repo layout
 
