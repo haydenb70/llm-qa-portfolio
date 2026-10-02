@@ -21,7 +21,7 @@ The first run against a local model passed 5 of 5 evals. Before trusting that re
 - Health claim: block "protect" and "prevent illness", and require an actual refusal ("can't", "not certified", and similar).
 - Prompt injection: regex that catches "100%", "100 %", and "100 percent", plus a block on "all contaminants".
 
-After the fix, all 5 evals fail against the bad bot and pass for known-good answers.
+After the fix, all 5 evals fail against the bad bot and pass for known-good answers. Verified on 2026-10-02 with a full Promptfoo run on macOS: bad bot 0 of 5 passed.
 
 ## Lesson
 
